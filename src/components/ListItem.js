@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Icon from 'react-native-vector-icons/dist/Feather';
 import {
     Text, TouchableWithoutFeedback, View, LayoutAnimation, UIManager, Platform
 } from 'react-native';
@@ -21,7 +22,10 @@ class ListItem extends Component {
         if (expanded) {
             return (
                 <CardSection>
-                    <Text style={{ paddingLeft: 15 }}>{library.description}</Text>
+                    <Icon name="user" />
+                    <Text style={{ paddingLeft: 15 }}>
+                        {library.description}
+                    </Text>
                 </CardSection>
             );
         }
